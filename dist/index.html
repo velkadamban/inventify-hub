@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Inventify Hub - Fabricating your dreams. Assembling your thoughts." />
+    <!-- Prevent FOUC for theme toggle by dynamically checking localStorage immediately -->
+    <script>
+        const storedTheme = localStorage.getItem('inventify-theme');
+        if (storedTheme === 'light') {
+            document.documentElement.classList.add('light-theme');
+        } else if (!storedTheme && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.documentElement.classList.add('light-theme');
+        }
+    </script>
+    <title>Inventify Hub | Hardware Innovation Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" crossorigin src="/assets/index-CNsogQGB.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DlUyohXO.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Interactive Organic Background -->
+    <div class="interactive-bg">
+        <div class="blob-wrapper">
+            <div id="blob1" class="blob"></div>
+            <div id="blob2" class="blob"></div>
+            <div id="blob3" class="blob"></div>
+        </div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Elegant Custom Cursor (Hidden on touch devices via CSS media queries) -->
+    <div id="cursor-ring"></div>
+    <div id="cursor-dot"></div>
+
+    <div class="smooth-scroll-wrapper">
+        <!-- Glass Navigation -->
+        <header class="glass-nav" id="main-nav">
+            <div class="nav-left">
+                <a href="#" class="logo">Inventify Hub.</a>
+            </div>
+
+            <div class="nav-center">
+                <nav class="nav-links" id="nav-links">
+                    <a href="#about" class="hover-link">Studio</a>
+                    <a href="#vision" class="hover-link">Vision</a>
+                    <a href="#services" class="hover-link">Expertise</a>
+                    <a href="mailto:contact@inventifyhub.com" class="btn-primary hover-link">Get in Touch</a>
+                </nav>
+            </div>
+
+            <div class="nav-right" style="display: flex; gap: 1rem; align-items: center;">
+                <button id="theme-btn" class="theme-toggle hover-link" aria-label="Toggle Theme">
+                    <span id="theme-icon">◐</span>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                    ☰
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <span class="eyebrow intro-animate">Hardware Innovation Studio</span>
+                    <h1 class="intro-animate delay-1">
+                        Fabricating your dreams.<br>
+                        <span class="text-gradient">Assembling your thoughts.</span>
+                    </h1>
+                    <p class="intro-animate delay-2">
+                        A collaborative engineering studio bridging the gap between hardware concepts and robust,
+                        production-ready electronic products.
+                    </p>
+                    <div class="hero-actions intro-animate delay-3">
+                        <a href="#about" class="btn-secondary hover-link">Explore the Studio</a>
+                        <a href="#services" class="btn-primary hover-link">Our Services</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="container glass-card reveal">
+                    <div class="two-col">
+                        <div class="text-col">
+                            <span class="eyebrow">Who We Are</span>
+                            <h2>Engineering without compromise.</h2>
+                            <p><strong>Inventify Hub</strong> is a collaborative hardware innovation studio formed by
+                                engineers from diverse industries who come together on a project basis to build
+                                reliable, production-ready electronic products. We operate as a flexible, turnkey
+                                team—bringing together the right expertise for each challenge.</p>
+                            <p>Our core strength lies in hardware design and system architecture, seamlessly integrated
+                                with firmware and bare-metal development. We work extensively on DAQ systems, IoT
+                                solutions, and industrial electronics.</p>
+                        </div>
+                        <div class="stats-col">
+                            <div class="stat-box hover-link">
+                                <h3>8<span class="lbl">Layer</span></h3>
+                                <p>PCB Design Focus</p>
+                            </div>
+                            <div class="stat-box hover-link">
+                                <h3>12<span class="lbl">Layer</span></h3>
+                                <p>Fabrication Limit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission & Vision Section -->
+            <section id="vision" class="content-section">
+                <div class="container">
+                    <div class="vision-grid">
+                        <!-- Mission -->
+                        <div class="vision-card glass-card reveal">
+                            <div class="card-icon">✧</div>
+                            <h3>Our Mission</h3>
+                            <p>To enable startups and product innovators by delivering high-quality, ethically
+                                engineered, and manufacturable hardware solutions.</p>
+                            <p>We prioritize discipline over shortcuts, ensuring every design meets real-world
+                                performance and reliability standards.</p>
+                        </div>
+                        <!-- Vision -->
+                        <div class="vision-card glass-card reveal delay-1">
+                            <div class="card-icon">✦</div>
+                            <h3>Our Vision</h3>
+                            <p>To become a recognized startup studio for hardware product design, trusted for technical
+                                depth, engineering ethics, and consistent execution.</p>
+                            <p>We aim to build long-term partnerships by helping transform early-stage ideas into robust
+                                industrial-grade products.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="content-section limit-bottom">
+                <div class="container reveal">
+                    <div class="center-text">
+                        <span class="eyebrow">Core Services</span>
+                        <h2>End-to-end excellence.</h2>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item hover-link">
+                            <div class="service-title">New Product Development (NPD)</div>
+                            <div class="service-desc">Turnkey solutions to take your idea from sketch to a fully
+                                functional prototype.</div>
+                        </div>
+                        <div class="service-item hover-link">
+                            <div class="service-title">Architecture & System Design</div>
+                            <div class="service-desc">Robust and scalable architectural planning for complex electronics
+                                systems.</div>
+                        </div>
+                        <div class="service-item hover-link">
+                            <div class="service-title">Firmware & Bare-Metal</div>
+                            <div class="service-desc">Reliable code optimized for ESP series, STMicroelectronics and
+                                industrial MCUs.</div>
+                        </div>
+                        <div class="service-item hover-link">
+                            <div class="service-title">Web App Development (IoT)</div>
+                            <div class="service-desc">Seamlessly connecting physical devices to beautiful and responsive
+                                cloud platforms.</div>
+                        </div>
+                        <div class="service-item hover-link">
+                            <div class="service-title">PCB Design & Fabrication</div>
+                            <div class="service-desc">Up to 8 layers design and 12 layers fabrication with a strict
+                                focus on EMI/EMC compliance.</div>
+                        </div>
+                        <div class="service-item hover-link">
+                            <div class="service-title">PCB Assembly</div>
+                            <div class="service-desc">Complete, high-precision component assembly services from concept
+                                to deployment.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="glass-footer">
+            <div class="footer-content container">
+                <div class="footer-left">
+                    <a href="#" class="logo" style="color: var(--text-primary); text-decoration: none;">Inventify.</a>
+                    <p>Building reliable, production-ready electronics.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:contact@inventifyhub.com" class="hover-link">Email Us</a>
+                    <a href="#" class="hover-link">LinkedIn</a>
+                    <a href="#" class="hover-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="copyright container">
+                &copy; <span id="year"></span> Inventify Hub. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Ensure body class is correctly set on initial load in case script missed it -->
+    <script>
+        if (document.documentElement.classList.contains('light-theme')) {
+            document.body.classList.add('light-theme');
+            document.documentElement.classList.remove('light-theme');
+        }
+    </script>
+</body>
+
+</html>
